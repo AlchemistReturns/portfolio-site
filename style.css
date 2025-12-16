@@ -77,7 +77,7 @@ a:hover {
 .section {
     padding: 10px 0;
 }
-.project-card, .job-card, .skill-card {
+.project-card, .job-card, .skill-card, .certification-card, .edu-item {
     background-color: var(--card-bg);
     border-left: 3px solid var(--primary-color);
     padding: 15px;
