@@ -1,132 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abrar Mahmud Hasan - Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;600&family=Outfit:wght@500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
+
 <body>
     <header class="hero">
-        <div class="container">
-            <h1>Abrar Mahmud Hasan</h1>
-            <p>Full-Stack & AI Engineering</p>
-            <p id="email">abrarhasan2003@gmail.com</p>
-            <div class="contact-links">
-                <a href="https://www.linkedin.com/in/abrar-mahmud-hasan-75a630222/" target="_blank" class="link-btn">LinkedIn</a>
-                <a href="https://github.com/AlchemistReturns" target="_blank" class="link-btn">Github</a>
-                <a href="resume.pdf" class="link-btn" target="_blank">Resume</a>
+        <div class="container hero-container">
+            <div class="hero-image-wrapper fade-in">
+                <img src="image.jpeg" alt="Abrar Mahmud Hasan" class="profile-img">
+            </div>
+            <div class="hero-content fade-in">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="text-gradient">Abrar Mahmud Hasan</h1>
+                <p class="subtitle">Full-Stack Developer & AI Enthusiast</p>
+                <p class="bio">Building scalable web systems and exploring the frontiers of Artificial Intelligence.</p>
+
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/abrar-mahmud-hasan-75a630222/" target="_blank"
+                        class="btn btn-outline" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/AlchemistReturns" target="_blank" class="btn btn-outline"
+                        aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="resume.pdf" target="_blank" class="btn btn-outline" aria-label="Resume">
+                        <i class="fas fa-file-alt"></i> Resume
+                    </a>
+                </div>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <section id="summary" class="section">
-            <h2>> Summary</h2>
-            <p>Computer Science student with a strong problem-solving mindset and hands-on experience in full-stack development using React, Django, and Spring Boot. Contributed to production-grade ERP and web systems, and now transitioning toward AI engineering with a solid foundation in Python, machine learning, and real-world software development.</p>
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">About Me</h2>
+                <div class="card fade-in">
+                    <p>I'm Abrar Mahmud Hasan, a Computer Science undergraduate with a strong passion for AI engineering
+                        and full-stack development. I enjoy building practical, real-world solutions that sit at the
+                        intersection of technology, creativity, and impact.<br><br>
+
+                        My journey started with web development and gradually evolved into machine learning, data
+                        science, and AI-powered applications. From building full-stack platforms and REST APIs to
+                        experimenting with predictive models and intelligent systems, I focus on learning by doing and
+                        continuously refining my skills through projects, hackathons, and research-oriented
+                        work.<br><br>
+
+                        I'm particularly interested in developing AI systems that are accessible, scalable, and socially
+                        impactful, especially in areas like education, healthcare, and cognitive development. I enjoy
+                        collaborating in team environments, breaking down complex problems, and turning ideas into
+                        products that people can actually use.</p>
+                </div>
+            </div>
         </section>
 
         <section id="experience" class="section">
-            <h2>> Experience</h2>
-            <div class="job-card">
-                <h3>Junior Software Engineer <span class="company-name">@ Shahrish Engineering & Construction Limited</span></h3>
-                <p class="date-range">December 2024 - September 2025</p>
-                <ul>
-                    <li>Designed and delivered production-grade web and ERP solutions using React, Tailwind CSS, and Django, including the company's official website and internal supply-chain modules that improved workflows and reduced manual data handling by 90%.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <h2>> Projects</h2>
-            <div class="project-card">
-                <h3>Ecommerce Backend (Spring Boot + SQL)</h3>
-                <p>Implemented a secure ecommerce backend with JWT-based authentication, product and order management, RESTful APIs, and a layered architecture with input validation.</p>
-                <a href="https://github.com/AlchemistReturns/eCommerceBackend" target="_blank">View Codes</a>
-            </div>
-            <div class="project-card">
-                <h3>CurioKids (React Native + Firebase)</h3>
-                <p>Built an AI-driven learning app for kids with personalized puzzles, gamification, parental controls, and real-time progress tracking using Firebase Authentication and Firestore.</p>
-                <a href="https://github.com/AlchemistReturns/CurioKids" target="_blank">View Codes</a>
-            </div>
-            <div class="project-card">
-                <h3>Predictive Modeling for Agriculture (Python & Scikit-learn)</h3>
-                <p>Developed a supervised ML model with feature selection to identify the most predictive soil attribute (N, P, K, or pH) for crop-type classification.</p>
-                <a href="https://github.com/AlchemistReturns/Predictive_modeling_for_agriculture" target="_blank">View Codes</a>
+            <div class="container">
+                <h2 class="section-title fade-in">Professional Experience</h2>
+                <div class="card fade-in">
+                    <div class="timeline-header">
+                        <h3>Joint Secretary</h3>
+                        <span class="date">December 2025 - Present</span>
+                    </div>
+                    <p style="color: var(--accent-primary); margin-bottom: 0.5rem;">@ IUT Computer Society
+                    </p>
+                    <ul style="list-style: disc; margin-left: 1rem; color: var(--text-secondary);">
+                        <li>Organized and supported technical workshops, coding competitions, and seminars for
+                            university students.</li>
+                        <li>Collaborated with cross-functional teams to manage event logistics, coordination, and member
+                            engagement.</li>
+                        <li>Managed documentation, communications, and execution of multiple seminars and workshops.
+                        </li>
+                    </ul>
+                </div>
+                <div class="card fade-in">
+                    <div class="timeline-header">
+                        <h3>Junior Software Engineer</h3>
+                        <span class="date">Dec 2024 - Sep 2025</span>
+                    </div>
+                    <p style="color: var(--accent-primary); margin-bottom: 0.5rem;">@ Shahrish Engineering &
+                        Construction Limited</p>
+                    <ul style="list-style: disc; margin-left: 1rem; color: var(--text-secondary);">
+                        <li>Designed and delivered production-grade web and ERP solutions using React, Tailwind CSS, and
+                            Django.</li>
+                        <li>Built the company's official website and internal supply-chain modules, improving workflows
+                            and reducing manual data handling by 90%.</li>
+                    </ul>
+                </div>
+                <div class="card fade-in">
+                    <div class="timeline-header">
+                        <h3>General Secretary</h3>
+                        <span class="date">May 2022 - May 2023</span>
+                    </div>
+                    <p style="color: var(--accent-primary); margin-bottom: 0.5rem;">@ Notre Dame Science Club
+                    </p>
+                    <ul style="list-style: disc; margin-left: 1rem; color: var(--text-secondary);">
+                        <li>Led administrative operations, meeting coordination, and inter-school event planning.</li>
+                        <li>Managed documentation, communications, and execution of science fairs and competitions</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section id="skills" class="section">
-            <h2>> Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>[01] Languages</h3>
-                    <ul>
-                        <li>Java, Python, C#, C++, JavaScript</li>
-                        <li>SQL, HTML/CSS</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>[02] Frameworks & DB</h3>
-                    <ul>
-                        <li>React, React-Native, NextJS</li>
-                        <li>Spring Boot, Django, MongoDB</li>
-                        <li>RestAPI, Git, Docker, Firebase</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <h3>[03] Data Science & ML</h3>
-                    <ul>
-                        <li>Supervised Learning: Linear/Logistic Regression, Decision Trees, k-NN, SVM</li>
-                        <li>Unsupervised Learning: k-Means Clustering, Hierarchical Clustering</li>
-                        <li>Tools & Libraries: Scikit-learn, Pandas, NumPy, Matplotlib</li>
-                    </ul>
+            <div class="container">
+                <h2 class="section-title fade-in">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="card skill-card fade-in">
+                        <h3><i class="fas fa-code"></i> Languages</h3>
+                        <div class="tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                    <div class="card skill-card fade-in">
+                        <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">React Native</span>
+                            <span class="tag">NextJS</span>
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="card skill-card fade-in">
+                        <h3><i class="fas fa-tools"></i> Tools</h3>
+                        <div class="tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">RestAPI</span>
+                        </div>
+                    </div>
+                    <div class="card skill-card fade-in">
+                        <h3><i class="fas fa-brain"></i> AI & ML</h3>
+                        <div class="tags">
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Matplotlib</span>
+                            <span class="tag">TensorFlow</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        
+
         <section id="education" class="section">
-            <h2>> Education</h2>
-            <div class="edu-item">
-                <h3>Islamic University of Technology</h3>
-                <p>Bachelor of Science in Computer Science & Engineering (CGPA 3.80/4.00)</p>
-                <p class="date-range">Expected Graduation: August 2027</p>
+            <div class="container">
+                <h2 class="section-title fade-in">Education & Certifications</h2>
+                <div class="timeline">
+                    <!-- Education -->
+                    <div class="card timeline-item fade-in">
+                        <div class="timeline-header">
+                            <h3>Islamic University of Technology</h3>
+                            <span class="date">Graduating in 2027</span>
+                        </div>
+                        <p>B.Sc. in Computer Science & Engineering</p>
+                        <p class="highlight">CGPA: 3.80/4.00</p>
+                    </div>
+
+                    <!-- Certs -->
+                    <div class="card timeline-item fade-in">
+                        <div class="timeline-header">
+                            <h3>Datacamp Certifications</h3>
+                        </div>
+                        <ul style="list-style: none; margin-left: 0; color: var(--text-secondary);">
+                            <li style="margin-bottom: 0.5rem;">
+                                <a href="https://www.datacamp.com/statement-of-accomplishment/course/66101d402d66aa0c8e17e06d3e4b9be4f036d2e6?raw=1"
+                                    target="_blank" class="btn-link">
+                                    Supervised Learning with Scikit-learn <i class="fas fa-external-link-alt"
+                                        style="font-size: 0.8em;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.datacamp.com/statement-of-accomplishment/course/150de95409cb1339846831cbc4121f1446f19aab?raw=1"
+                                    target="_blank" class="btn-link">
+                                    Unsupervised Learning in Python <i class="fas fa-external-link-alt"
+                                        style="font-size: 0.8em;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card timeline-item fade-in">
+                        <div class="timeline-header">
+                            <h3>Other Certifications</h3>
+                        </div>
+                        <ul style="list-style: none; margin-left: 0; color: var(--text-secondary);">
+                            <li style="margin-bottom: 0.5rem;">
+                                <a href="https://nextjs.org/learn/certificate?course=react-foundations&user=69091&certId=react-foundations-69091-1749562350365"
+                                    target="_blank" class="btn-link">
+                                    [Vercel] React Foundations <i class="fas fa-external-link-alt"
+                                        style="font-size: 0.8em;"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.udemy.com/certificate/UC-18f822dd-11d5-4e90-89e0-5168a8ba2949/"
+                                    target="_blank" class="btn-link">
+                                    [Udemy] The Web Developer Bootcamp <i class="fas fa-external-link-alt"
+                                        style="font-size: 0.8em;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="certifications" class="section">
-            <h2>> Certifications</h2>
-            <div class="certification-card">
-                <h3>[Datacamp] Supervised Learning with Sci-kit Learn</h3>
-                <a href="https://www.datacamp.com/statement-of-accomplishment/course/66101d402d66aa0c8e17e06d3e4b9be4f036d2e6?raw=1" target="_blank">View Credentials</a>
-            </div>
-            <div class="certification-card">
-                <h3>[Datacamp] Unsupervised Learning in Python</h3>
-                <a href="https://www.datacamp.com/statement-of-accomplishment/course/150de95409cb1339846831cbc4121f1446f19aab?raw=1" target="_blank">View Credentials</a>
-            </div>
-            <div class="certification-card">
-                <h3>[Vercel] React Foundations for Next.js</h3>
-                <a href="https://nextjs.org/learn/certificate?course=react-foundations&user=69091&certId=react-foundations-69091-1749562350365" target="_blank">View Credentials</a>
-            </div>
-            <div class="certification-card">
-                <h3>[Udemy] The Web Developer Bootcamp</h3>
-                <a href="https://www.udemy.com/certificate/UC-18f822dd-11d5-4e90-89e0-5168a8ba2949/" target="_blank">View Credentials</a>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="card project-card fade-in">
+                        <div class="project-thumb">
+                            <img src="curiokids.png" alt="CurioKids">
+                        </div>
+                        <div class="card-header">
+                            <i class="fas fa-child project-icon"></i>
+                            <h3>CurioKids</h3>
+                        </div>
+                        <p>AI-driven learning app for kids with personalized puzzles and progress tracking using React
+                            Native & Firebase.</p>
+                        <div class="tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">AI</span>
+                        </div>
+                        <a href="https://github.com/AlchemistReturns/CurioKids" target="_blank"
+                            class="btn btn-outline btn-sm">
+                            View Code <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+
+
+                    <!-- Project 2 -->
+                    <div class="card project-card fade-in">
+                        <div class="project-thumb">
+                            <img src="healthx.png" alt="HealthX">
+                        </div>
+                        <div class="card-header">
+                            <i class="fas fa-heart project-icon"></i>
+                            <h3>HealthX</h3>
+                        </div>
+                        <p>Hackathon winning AI powered application bridging the gap in medical support for Bangladesh's
+                            Hill Tracts and Rural Regions.</p>
+                        <div class="tags">
+                            <span class="tag">React</span>
+                            <span class="tag">NodeJs</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Gemini</span>
+                        </div>
+                        <a href="https://github.com/AlchemistReturns/FutureBuilders2025_IUT_CGPA_Doesnt_Matter"
+                            target="_blank" class="btn btn-outline btn-sm">
+                            View Code <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="card project-card fade-in">
+                        <div class="project-thumb">
+                            <img src="ecommerce.png" alt="Ecommerce Backend">
+                        </div>
+                        <div class="card-header">
+                            <i class="fas fa-shopping-cart project-icon"></i>
+                            <h3>Ecommerce Backend</h3>
+                        </div>
+                        <p>Secure backend with JWT authentication, product management, and RESTful APIs using Spring
+                            Boot & SQL.</p>
+                        <div class="tags">
+                            <span class="tag">Spring Boot</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">JWT</span>
+                        </div>
+                        <a href="https://github.com/AlchemistReturns/eCommerceBackend" target="_blank"
+                            class="btn btn-outline btn-sm">
+                            View Code <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="card project-card fade-in">
+                        <div class="project-thumb">
+                            <img src="agriculture.png" alt="Agri-Predictive Model">
+                        </div>
+                        <div class="card-header">
+                            <i class="fas fa-seedling project-icon"></i>
+                            <h3>Agri-Predictive Model</h3>
+                        </div>
+                        <p>Supervised ML model to identify predictive soil attributes for crop classification using
+                            Python & Scikit-learn.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Scikit-learn</span>
+                            <span class="tag">ML</span>
+                        </div>
+                        <a href="https://github.com/AlchemistReturns/Predictive_modeling_for_agriculture"
+                            target="_blank" class="btn btn-outline btn-sm">
+                            View Code <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="achievements" class="section">
-            <h2>> Awards & Achievements</h2>
-            <ul>
-                <li>Champion, Robi 10 Minute School ICT Olympiad</li>
-                <li>Gold Medalist, DRICM International Chemical Metrology Olympiad</li>
-                <li>Participant, ACM ICPC Dhaka Regionals</li>
-            </ul>
+
+
+        <section id="contact" class="section">
+            <div class="container text-center" style="text-align: center;">
+                <h2 class="section-title fade-in">Get In Touch</h2>
+                <p class="fade-in" style="max-width: 600px; margin: 0 auto 2rem auto;">
+                    I'm currently looking for new opportunities in Software Engineering and AI.
+                    Whether you have a question or just want to say hi, my inbox is always open!
+                </p>
+                <a href="mailto:abrarhasan2003@gmail.com" class="email-link fade-in">
+                    <i class="fas fa-envelope"></i> abrarhasan2003@gmail.com
+                </a>
+            </div>
         </section>
 
     </main>
 
-    <footer class="container">
+    <footer class="container"
+        style="padding: 2rem 0; text-align: center; border-top: 1px solid var(--glass-border); margin-top: 2rem;">
         <p>&copf; Abrar Mahmud Hasan 2025</p>
+        <div class="social-links" style="margin-top: 1rem; font-size: 1.2rem;">
+            <a href="https://github.com/AlchemistReturns" target="_blank" style="margin: 0 10px;"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abrar-mahmud-hasan-75a630222/" target="_blank"
+                style="margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
+
+    <script>
+        // Scroll Animation
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
+
 </html>
