@@ -128,4 +128,105 @@ document.addEventListener('DOMContentLoaded', () => {
 
         observer.observe(skillsGrid);
     }
+
+    // 6. Magnetic Buttons (refined)
+    // Using anime.js to pull the button towards the mouse slightly
+    const magneticBtns = document.querySelectorAll('.btn, .btn-theme');
+    magneticBtns.forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+
+            anime({
+                targets: btn,
+                translateX: x * 0.2, // strength
+                translateY: y * 0.2,
+                duration: 50, // snappy
+                easing: 'linear'
+            });
+        });
+
+        btn.addEventListener('mouseleave', () => {
+            anime({
+                targets: btn,
+                translateX: 0,
+                translateY: 0,
+                duration: 600,
+                easing: 'easeOutElastic(1, .5)'
+            });
+        });
+    });
+
+    // 7. Easter Egg: Bottom of page reveal
+    // Create hidden button
+    const footer = document.querySelector('footer');
+    if (footer) {
+        const easterEggBtn = document.createElement('button');
+        easterEggBtn.textContent = "don't click";
+        easterEggBtn.style.cssText = `
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            background: transparent;
+            border: none;
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: opacity 0.5s;
+        `;
+        footer.style.position = 'relative';
+        footer.appendChild(easterEggBtn);
+
+        // Show after scrolling to very bottom
+        window.addEventListener('scroll', () => {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+                easterEggBtn.style.opacity = 0.5;
+            } else {
+                easterEggBtn.style.opacity = 0;
+            }
+        });
+
+        easterEggBtn.addEventListener('click', () => {
+            easterEggBtn.textContent = "PARTY MODE ACTIVATED!";
+            partyMode();
+        });
+    }
+
+    function partyMode() {
+        // Rainbow everything
+        const duration = 15 * 1000;
+        const animationEnd = Date.now() + duration;
+
+        // Continuous confetti
+        const interval = setInterval(function () {
+            const timeLeft = animationEnd - Date.now();
+
+            if (timeLeft <= 0) {
+                return clearInterval(interval);
+            }
+
+            confetti({
+                particleCount: 20,
+                startVelocity: 30,
+                spread: 360,
+                origin: {
+                    x: Math.random(),
+                    // since they fall down, start a bit higher than random
+                    y: Math.random() - 0.2
+                }
+            });
+        }, 250);
+
+        // Rainbow tint
+        const root = document.documentElement;
+        let hue = 0;
+        const colorInterval = setInterval(() => {
+            if (Date.now() > animationEnd) clearInterval(colorInterval);
+            hue = (hue + 10) % 360;
+            root.style.setProperty('--accent-hue', hue);
+        }, 100);
+    }
 });
